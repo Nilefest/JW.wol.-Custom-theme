@@ -12,6 +12,7 @@
 
 ## Несколько скринов
 ![изображение](https://user-images.githubusercontent.com/33624926/147483157-1eb1ea56-b2ef-4494-ae62-f674a0aa104b.png)
+![изображение](https://user-images.githubusercontent.com/33624926/147483348-a1b2949a-e622-49f5-a597-dac62a8f563b.png)
 ![изображение](https://user-images.githubusercontent.com/33624926/147483188-47c99ebf-aed2-47c3-aff4-f0a2aeb58ba1.png)
 
 -------

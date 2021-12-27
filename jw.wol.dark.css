@@ -15,6 +15,7 @@ Git: https://github.com/Nilefest/jw.wol.themes
     --color-blue: #467daa;
 
     --color-red: #c82c2c;
+	--color-purple: #a85aa1;
 }
 
 /* Common */
@@ -105,7 +106,10 @@ Git: https://github.com/Nilefest/jw.wol.themes
 .jwac.pub-igw.docClass-11 .groupTOC > .source .txtSrcBullet,
 .jwac.pub-nwt.docClass-11 .groupTOC > .source .txtSrcBullet,
 .jwac.pub-nwtsty.docClass-11 .groupTOC > .source .txtSrcBullet {
-    color: var(--color-red);
+    color: var(--color-red) !important;
+}
+.jwac .du-color--purple-600{
+    color: var(--color-purple) !important;
 }
 
 /* scrollbar */
@@ -558,10 +562,15 @@ tbody {
     background: var(--bg-color-blue) !important;
 }
 
+.jwac .du-bgColor--teal-50,
 .boxSupplement,
 .jwac .du-bgColor--warmGray-50,
 .jwac .du-bgColor--gray-50 {
     background: var(--bg-color-light) !important;
+}
+
+figure p{
+    color: var(--color-gray) !important;
 }
 
 #article.document input, #article.document textarea,

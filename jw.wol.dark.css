@@ -1,7 +1,6 @@
 /*
 Git: https://github.com/Nilefest/jw.wol.themes
 */
-
 /* Palitra */
 :root {
 	--bg-color-dark: #38383d;
@@ -368,23 +367,35 @@ body {
 }
 
 /* Content. Nav-controls (<< < today/week > >>) */
+.resultsNavDocumentLink,
 .resultNavControls li a {
 	border: 1px solid var(--color-gray) !important;
 	background: var(--bg-color-light) !important;
 	color: var(--color-light) !important;
 }
 
+.resultsNavDocumentLink:hover,
 .resultNavControls li:hover a {
 	border-color: var(--color-blue) !important;
 	color: var(--color-blue) !important;
 }
 
+.resultsNavDocumentLink .icon,
 .resultNavControls li a .icon {
 	background-position-x: -96px !important;
 }
 
+.resultsNavDocumentLink:hover .icon,
 .resultNavControls li:hover a .icon {
 	background-position-x: 0px !important;
+}
+
+.dir-ltr ul.documentNavigation .subheading {
+	border-color: var(--color-gray) !important;
+}
+
+.dir-ltr ul.documentNavigation .subheading:not(.visibleParagraph) {
+	border-right: none;
 }
 
 /* Content. Study */
@@ -541,6 +552,17 @@ tbody {
 
 #article.document input:disabled, #article.document textarea:disabled {
 	opacity: 0.5
+}
+
+.contextMenu {
+	background: var(--bg-color-light) !important;
+	color: var(--color-dark) !important;
+	border-color: var(--bg-color-dark) !important;
+}
+
+.triangle-center-5::after,
+.triangle-center-5::before {
+	border-color: var(--bg-color-light) transparent !important;
 }
 
 /* ------- */

@@ -246,9 +246,16 @@ body {
 	background: var(--bg-color-light) !important;
 }
 
+.cardContainer,
 .linkCard a {
 	background: var(--bg-color-gray) !important;
 	border: 1px solid var(--color-dark) !important;
+}
+
+.cardContainer:hover,
+.cardContainer:hover .cardTitleBlock {
+	background: var(--bg-color-light) !important;
+	color: var(--color-blue) !important;
 }
 
 /* Content. Bible */
@@ -475,9 +482,13 @@ p.qu {
 .bannerSync,
 .synchronizeBackgroundColor {
 	color: var(--bg-color-dark) !important;
-	background: var(--bg-color-blue) !important;
+	background: var(--bg-color-light) !important;
 	border: none;
 	overflow: hidden;
+}
+
+.bannerSync{
+	background: var(--bg-color-blue) !important;
 }
 
 /* ------- */

@@ -1,3 +1,7 @@
+/*
+Git: https://github.com/Nilefest/jw.wol.themes
+*/
+
 /* Palitra */
 :root {
 	--bg-color-dark: #38383d;
@@ -487,8 +491,56 @@ p.qu {
 	overflow: hidden;
 }
 
-.bannerSync{
+.bannerSync {
 	background: var(--bg-color-blue) !important;
+}
+
+.alternatePresentation {
+	color: var(--color-light) !important;
+	background: var(--bg-color-light) !important;
+	opacity: 0.8;
+}
+
+.alternatePresentation:hover {
+	opacity: 1;
+}
+
+img {
+	opacity: 0.8 !important;
+}
+
+.dc-bgImageZoomable,
+.du-bgImage-mobileOnly--none,
+.du-bgColor--cyan-50,
+tbody {
+	color: var(--color-dark) !important;
+	opacity: 0.8;
+}
+
+.vjs-menu-content,
+.vjs-control,
+.vjs-control-bar {
+	background: var(--bg-color-dark) !important;
+}
+
+.vjs-menu-item:hover {
+	background: var(--bg-color-blue) !important;
+}
+
+.boxSupplement,
+.jwac .du-bgColor--warmGray-50,
+.jwac .du-bgColor--gray-50 {
+	background: var(--bg-color-light) !important;
+}
+
+#article.document input, #article.document textarea,
+#article.document input:disabled, #article.document textarea:disabled {
+	background: var(--bg-color-dark) !important;
+	color: var(--color-dark) !important;
+}
+
+#article.document input:disabled, #article.document textarea:disabled {
+	opacity: 0.5
 }
 
 /* ------- */

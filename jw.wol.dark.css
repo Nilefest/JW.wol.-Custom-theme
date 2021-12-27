@@ -3,18 +3,18 @@ Git: https://github.com/Nilefest/jw.wol.themes
 */
 /* Palitra */
 :root {
-	--bg-color-dark: #38383d;
-	--bg-color-gray: #3e3e42;
-	--bg-color-light: #57575b;
-	--bg-color-blue: #a3c5df;
+    --bg-color-dark: #38383d;
+    --bg-color-gray: #3e3e42;
+    --bg-color-light: #57575b;
+    --bg-color-blue: #a3c5df;
 
-	--color-dark: #555;
-	--color-gray: #848282;
-	--color-light: #ddd;
+    --color-dark: #555;
+    --color-gray: #848282;
+    --color-light: #ddd;
 
-	--color-blue: #467daa;
+    --color-blue: #467daa;
 
-	--color-red: #c82c2c;
+    --color-red: #c82c2c;
 }
 
 /* Common */
@@ -105,112 +105,132 @@ Git: https://github.com/Nilefest/jw.wol.themes
 .jwac.pub-igw.docClass-11 .groupTOC > .source .txtSrcBullet,
 .jwac.pub-nwt.docClass-11 .groupTOC > .source .txtSrcBullet,
 .jwac.pub-nwtsty.docClass-11 .groupTOC > .source .txtSrcBullet {
-	color: var(--color-red);
+    color: var(--color-red);
 }
 
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: var(--bg-color-gray) !important;
+}
+body * ::-webkit-scrollbar {
+    background-color: var(--bg-color-dark) !important;
+}
+
+/* thumb for scrollbar */
+::-webkit-scrollbar-thumb {
+    background: var(--bg-color-light) !important;
+    border-radius: 3px;
+    box-shadow: var(--bg-color-dark) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-gray) !important;
+}
 
 /* Body */
 body {
-	background: var(--bg-color-dark) !important;
-	color: var(--color-light) !important;
+    background: var(--bg-color-dark) !important;
+    color: var(--color-light) !important;
 }
 
 /* Header. 1st line */
 #siteBanner {
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important
 }
 
 /* Header. Toolbar (Search...)  */
 #toolbarFrame {
-	background: var(--bg-color-dark) !important;
-	color: var(--color-light) !important
+    background: var(--bg-color-dark) !important;
+    color: var(--color-light) !important
 }
 
 #toolbarFrame .searchField {
-	background: var(--bg-color-dark) !important;
-	color: var(--color-light) !important
+    background: var(--bg-color-dark) !important;
+    color: var(--color-light) !important
 }
 
 #toolbarFrame .searchFieldContainer,
 #toolbarFrame .searchButton {
-	background: var(--bg-color-dark) !important;
-	color: var(--color-light) !important;
-	border-color: var(--color-gray) !important;
+    background: var(--bg-color-dark) !important;
+    color: var(--color-light) !important;
+    border-color: var(--color-gray) !important;
 }
 
 #toolbarFrame .searchButton:hover {
-	border-color: var(--color-blue) !important;
-	color: var(--color-blue) !important;
+    border-color: var(--color-blue) !important;
+    color: var(--color-blue) !important;
 }
 
 /* Header. Publication nav */
 #publicationNavigation {
-	background: var(--bg-color-dark) !important;
-	color: var(--color-light) !important;
-	border-top: 1px solid var(--color-dark) !important;
+    background: var(--bg-color-dark) !important;
+    color: var(--color-light) !important;
+    border-top: 1px solid var(--color-dark) !important;
 }
 
 .resultDocumentPubTitle,
 .scrollPositionDisplay {
-	color: var(--color-light) !important;
+    color: var(--color-light) !important;
 }
 
 /* Header. Main tabs */
 #toolbarFrame #menuFrame,
 #toolbarFrame #menuFrame .label {
-	background: var(--bg-color-dark) !important;
-	color: var(--color-light) !important
+    background: var(--bg-color-dark) !important;
+    color: var(--color-light) !important
 }
 
 #toolbarFrame #menuFrame .selected .label,
 #toolbarFrame #menuFrame a:hover .label {
-	color: var(--color-blue) !important
+    color: var(--color-blue) !important
 }
 
 #menuBible .icon,
 #menuPublications .icon,
 #menuToday .icon {
-	background-position-x: -96px;
+    background-position-x: -96px;
 }
 
 /* Header. Player */
 #playerwrapper .mejs-container .mejs-controls {
-	background: var(--bg-color-light) !important;
-	color: var(--color-light) !important;
+    background: var(--bg-color-light) !important;
+    color: var(--color-light) !important;
 }
 
 #playerwrapper .mejs-button {
-	opacity: 0.5;
+    opacity: 0.5;
 }
 
 #playerplaylist {
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important;
-	border-color: var(--color-dark) !important
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important;
+    border-color: var(--color-dark) !important
 }
 
 #playerplaylist .mediaTitle {
-	color: var(--color-blue) !important;
+    color: var(--color-blue) !important;
 }
 
 /* Content. Welcome */
 #home,
 #article,
 .materialNav {
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important
 }
 
 #home .siteTitleLine1.dark,
 #home .siteAbout {
-	color: var(--color-light) !important
+    color: var(--color-light) !important
 }
 
 /* Content */
 #content {
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important;
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important;
 }
 
 #dailyText,
@@ -218,223 +238,223 @@ body {
 .articlePositioner,
 .todayItems,
 .todayItem {
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important;
-	border-color: var(--color-gray) !important;
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important;
+    border-color: var(--color-gray) !important;
 }
 
 /* Content. Left sitebar */
 #secondaryNavContent {
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important;
-	border-right: 1px solid var(--color-gray) !important;
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important;
+    border-right: 1px solid var(--color-gray) !important;
 }
 
 .navigationTabs,
 .navigationTabs .tabItem {
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important;
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important;
 }
 
 .navigationTabs .tabItem.active {
-	background: var(--bg-color-light) !important;
+    background: var(--bg-color-light) !important;
 }
 
 #secondaryNavContent .resultsNavigationSelected .navContent {
-	color: var(--color-gray) !important;
+    color: var(--color-gray) !important;
 }
 
 .simDoc:hover a,
 .subheading:hover {
-	background: var(--bg-color-light) !important;
+    background: var(--bg-color-light) !important;
 }
 
 .cardContainer,
 .linkCard a {
-	background: var(--bg-color-gray) !important;
-	border: 1px solid var(--color-dark) !important;
+    background: var(--bg-color-gray) !important;
+    border: 1px solid var(--color-dark) !important;
 }
 
 .cardContainer:hover,
 .cardContainer:hover .cardTitleBlock {
-	background: var(--bg-color-light) !important;
-	color: var(--color-blue) !important;
+    background: var(--bg-color-light) !important;
+    color: var(--color-blue) !important;
 }
 
 /* Content. Bible */
 .resultAlternatePubTitle,
 .materialNav .card {
-	border-bottom: 1px solid var(--color-gray) !important;
+    border-bottom: 1px solid var(--color-gray) !important;
 }
 
 .cardTitleBlock {
-	color: var(--color-light) !important;
+    color: var(--color-light) !important;
 }
 
 .cardTitleBlock:hover {
-	color: var(--color-blue) !important;
+    color: var(--color-blue) !important;
 }
 
 .resultAlternatePubTitle .lnk .cardChevron .icon,
 .materialNav .card .lnk .cardChevron .icon {
-	background-position-x: -96px;
+    background-position-x: -96px;
 }
 
 .resultAlternatePubTitle:hover .lnk .cardChevron .icon,
 .materialNav .card:hover .lnk .cardChevron .icon {
-	background-position-x: 0px;
+    background-position-x: 0px;
 }
 
 .pageList,
 .viewPage {
-	border-color: var(--color-gray) !important;
+    border-color: var(--color-gray) !important;
 }
 
 .viewPage.selected,
 .viewPage.selected .title {
-	border-color: var(--color-blue) !important;
-	color: var(--color-light) !important;
+    border-color: var(--color-blue) !important;
+    color: var(--color-light) !important;
 }
 
 .viewPage:hover,
 .viewPage:hover a {
-	background: var(--bg-color-light) !important;
+    background: var(--bg-color-light) !important;
 }
 
 .gridItem,
 .gridItem a {
-	color: var(--color-light) !important;
-	border-color: var(--color-gray) !important;
+    color: var(--color-light) !important;
+    border-color: var(--color-gray) !important;
 }
 
 .gridItem:hover,
 .gridItem:hover a {
-	overflow: hidden !important;
-	background: var(--bg-color-light) !important;
-	border-color: var(--color-blue) !important;
+    overflow: hidden !important;
+    background: var(--bg-color-light) !important;
+    border-color: var(--color-blue) !important;
 }
 
 .helpChap {
-	color: var(--color-light) !important;
+    color: var(--color-light) !important;
 }
 
 .backNav .contextTtl {
-	color: var(--color-blue) !important;
+    color: var(--color-blue) !important;
 }
 
 .bibleBookOutline {
-	border-color: var(--color-gray) !important;
+    border-color: var(--color-gray) !important;
 }
 
 .bibleAdditionalLinks a {
-	color: var(--color-light) !important;
+    color: var(--color-light) !important;
 }
 
 .bibleAdditionalLinks li:hover,
 .bibleAdditionalLinks li:hover a {
-	background: var(--bg-color-light) !important;
+    background: var(--bg-color-light) !important;
 }
 
 /* Content. View setting, Bible view type */
 #bibleChapterView,
 #documentMenuButton {
-	background: var(--bg-color-light) !important;
-	border: 1px solid var(--color-gray) !important;
+    background: var(--bg-color-light) !important;
+    border: 1px solid var(--color-gray) !important;
 }
 
 #documentMenuButton .icon {
-	background-position-x: -96px !important;
+    background-position-x: -96px !important;
 }
 
 #bibleChapterView:hover,
 #documentMenuButton:hover {
-	border: 1px solid var(--color-blue) !important;
+    border: 1px solid var(--color-blue) !important;
 }
 
 #documentMenuButton:hover .icon {
-	background-position-x: 0px;
+    background-position-x: 0px;
 }
 
 .documentMenu {
-	border: 1px solid var(--color-dark) !important;
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important;
+    border: 1px solid var(--color-dark) !important;
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important;
 }
 
 .spinContainer button {
-	border: 1px solid var(--color-gray) !important;
-	background: var(--bg-color-gray) !important;
+    border: 1px solid var(--color-gray) !important;
+    background: var(--bg-color-gray) !important;
 }
 
 /* Content. Nav-controls (<< < today/week > >>) */
 .resultsNavDocumentLink,
 .resultNavControls li a {
-	border: 1px solid var(--color-gray) !important;
-	background: var(--bg-color-light) !important;
-	color: var(--color-light) !important;
+    border: 1px solid var(--color-gray) !important;
+    background: var(--bg-color-light) !important;
+    color: var(--color-light) !important;
 }
 
 .resultsNavDocumentLink:hover,
 .resultNavControls li:hover a {
-	border-color: var(--color-blue) !important;
-	color: var(--color-blue) !important;
+    border-color: var(--color-blue) !important;
+    color: var(--color-blue) !important;
 }
 
 .resultsNavDocumentLink .icon,
 .resultNavControls li a .icon {
-	background-position-x: -96px !important;
+    background-position-x: -96px !important;
 }
 
 .resultsNavDocumentLink:hover .icon,
 .resultNavControls li:hover a .icon {
-	background-position-x: 0px !important;
+    background-position-x: 0px !important;
 }
 
 .dir-ltr ul.documentNavigation .subheading {
-	border-color: var(--color-gray) !important;
+    border-color: var(--color-gray) !important;
 }
 
 .dir-ltr ul.documentNavigation .subheading:not(.visibleParagraph) {
-	border-right: none;
+    border-right: none;
 }
 
 /* Content. Study */
 #study {
-	border-left: 1px solid var(--color-gray) !important;
-	background: var(--bg-color-gray) !important;
+    border-left: 1px solid var(--color-gray) !important;
+    background: var(--bg-color-gray) !important;
 }
 
 #study .navigationTabs {
-	border-bottom: 1px solid var(--color-gray) !important;
-	background: var(--bg-color-gray) !important;
+    border-bottom: 1px solid var(--color-gray) !important;
+    background: var(--bg-color-gray) !important;
 }
 
 #study .tabItem:hover,
 #study .tabItem.active {
-	background: var(--bg-color-light) !important;
+    background: var(--bg-color-light) !important;
 }
 
 #study .section,
 #study .extract {
-	background: var(--bg-color-gray) !important;
+    background: var(--bg-color-gray) !important;
 }
 
 #study .results {
-	border: 1px solid var(--color-dark) !important;
+    border: 1px solid var(--color-dark) !important;
 }
 
 #study .results .content,
 #study .results .content p {
-	background: var(--bg-color-light) !important;
-	color: var(--color-light) !important
+    background: var(--bg-color-light) !important;
+    color: var(--color-light) !important
 }
 
 #study .marginalExpander {
-	background: var(--bg-color-gray) !important;
+    background: var(--bg-color-gray) !important;
 }
 
 #study .marginalExpander .marginal.title {
-	color: var(--color-blue) !important;
+    color: var(--color-blue) !important;
 }
 
 /* Content. Tooltip publication */
@@ -444,125 +464,125 @@ body {
 .tooltipHeader,
 .bibleCitation,
 .tooltipText {
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important
 }
 
 .tooltipHeader {
-	background: var(--bg-color-dark) !important;
+    background: var(--bg-color-dark) !important;
 }
 
 /* Content. Articles */
 p.qu {
-	color: var(--color-gray) !important
+    color: var(--color-gray) !important
 }
 
 /* Footer */
 #contentFooterLegal {
-	background: var(--bg-color-dark) !important;
-	color: var(--color-light) !important
+    background: var(--bg-color-dark) !important;
+    color: var(--color-light) !important
 }
 
 /* Other items */
 .spin button,
 .selectionListFilterText,
 .grayButton {
-	background: var(--bg-color-dark) !important;
-	color: var(--color-gray) !important;
-	border-color: var(--color-gray) !important;
+    background: var(--bg-color-dark) !important;
+    color: var(--color-gray) !important;
+    border-color: var(--color-gray) !important;
 }
 
 .spin button:hover,
 .selectionListFilterText:hover,
 .grayButton:hover {
-	background: var(--bg-color-gray) !important;
-	color: var(--color-light) !important;
-	border-color: var(--color-gray) !important;
+    background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important;
+    border-color: var(--color-gray) !important;
 }
 
 .librarySelection .language {
-	color: var(--color-light) !important;
+    color: var(--color-light) !important;
 }
 
 .librarySelection li a:hover {
-	background: var(--bg-color-dark) !important;
+    background: var(--bg-color-dark) !important;
 }
 
 #menuSynchronizeControls #linkSynchronize .label {
-	background: var(--bg-color-light) !important;
-	padding-top: 0px !important;
+    background: var(--bg-color-light) !important;
+    padding-top: 0px !important;
 }
 
 #menuSynchronizeControls,
 .bannerSync,
 .synchronizeBackgroundColor {
-	color: var(--bg-color-dark) !important;
-	background: var(--bg-color-light) !important;
-	border: none;
-	overflow: hidden;
+    color: var(--bg-color-dark) !important;
+    background: var(--bg-color-light) !important;
+    border: none;
+    overflow: hidden;
 }
 
 .bannerSync {
-	background: var(--bg-color-blue) !important;
+    background: var(--bg-color-blue) !important;
 }
 
 .alternatePresentation {
-	color: var(--color-light) !important;
-	background: var(--bg-color-light) !important;
-	opacity: 0.8;
+    color: var(--color-light) !important;
+    background: var(--bg-color-light) !important;
+    opacity: 0.8;
 }
 
 .alternatePresentation:hover {
-	opacity: 1;
+    opacity: 1;
 }
 
 img {
-	opacity: 0.8 !important;
+    opacity: 0.8 !important;
 }
 
 .dc-bgImageZoomable,
 .du-bgImage-mobileOnly--none,
 .du-bgColor--cyan-50,
 tbody {
-	color: var(--color-dark) !important;
-	opacity: 0.8;
+    color: var(--color-dark) !important;
+    opacity: 0.8;
 }
 
 .vjs-menu-content,
 .vjs-control,
 .vjs-control-bar {
-	background: var(--bg-color-dark) !important;
+    background: var(--bg-color-dark) !important;
 }
 
 .vjs-menu-item:hover {
-	background: var(--bg-color-blue) !important;
+    background: var(--bg-color-blue) !important;
 }
 
 .boxSupplement,
 .jwac .du-bgColor--warmGray-50,
 .jwac .du-bgColor--gray-50 {
-	background: var(--bg-color-light) !important;
+    background: var(--bg-color-light) !important;
 }
 
 #article.document input, #article.document textarea,
 #article.document input:disabled, #article.document textarea:disabled {
-	background: var(--bg-color-dark) !important;
-	color: var(--color-dark) !important;
+    background: var(--bg-color-dark) !important;
+    color: var(--color-dark) !important;
 }
 
 #article.document input:disabled, #article.document textarea:disabled {
-	opacity: 0.5
+    opacity: 0.5
 }
 
 .contextMenu {
-	background: var(--bg-color-light) !important;
-	color: var(--color-dark) !important;
-	border-color: var(--bg-color-dark) !important;
+    background: var(--bg-color-light) !important;
+    color: var(--color-dark) !important;
+    border-color: var(--bg-color-dark) !important;
 }
 
 .triangle-center-5::after,
 .triangle-center-5::before {
-	border-color: var(--bg-color-light) transparent !important;
+    border-color: var(--bg-color-light) transparent !important;
 }
 
 /* ------- */

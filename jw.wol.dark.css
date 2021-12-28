@@ -461,14 +461,25 @@ body {
     color: var(--color-blue) !important;
 }
 
+#study .footnote.selected{
+    background: var(--bg-color-light) !important;
+    color: var(--color-light) !important
+}
+
+
 /* Content. Tooltip publication */
 .tooltip,
 .tooltipListItem,
 .publicationCitation,
-.tooltipHeader,
 .bibleCitation,
+.tooltipHeader,
 .tooltipText {
     background: var(--bg-color-gray) !important;
+    color: var(--color-light) !important
+}
+
+#study .bibleCitation{
+    background: var(--bg-color-light) !important;
     color: var(--color-light) !important
 }
 
